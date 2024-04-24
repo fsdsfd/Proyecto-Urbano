@@ -1,34 +1,43 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Afiliación</title>
-  </head>
-  <body>
-    <header>
-    </header>
-    <main>
-      <section>
-        <fieldset>
-          <form>
-        <legend>datos personales</legend>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,600;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<title>Afiliación</title>
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <h1>Vení al Gym!</h1>
+    <section>
+      <fieldset>
+        <form>
+          <legend class="legend-1">Datos personales</legend>
           <label>
             <p>Nombre:*</p>
-            <input type="text" name="Nombre" id="Nombre-lbl" class="width">
+            <input type="text" name="Nombre" id="Nombre-lbl" class="width" required>
           </label>
           <label>
             <p>Apellido:*</p>
-            <input type="text" name="Apellido" id="Apellido-lbl" class="width">
+            <input type="text" name="Apellido" id="Apellido-lbl" class="width" required>
           </label>
           <label>
             <p>Documento:*</p>
-            <input type="text" name="Documento" id="Documento-lbl" class="width">
+            <input type="number" name="Documento" id="Documento-lbl" class="width" required>
           </label>
           <label>
             <p>Nacionalidad:*</p>
-            <select name="Nacionalidad" id="Nacionalidad-lbl">
+            <select name="Nacionalidad" id="Nacionalidad-lbl" required>
               <option value="Selecciona">--Seleccionar--</option>
               <option value="Argentina">Argentina</option>
               <option value="Brasileña">Brasileña</option>
@@ -36,51 +45,70 @@
               <option value="Otra">Otra</option>
             </select>
           </label>
-          <label for="textarea">Cuentanos un poco de vos...</label>
-          <textarea name="Cuentanos" id="textarea" cols="30" rows="10"></textarea>
+          <label for="textarea">
+            <p>Cuentanos un poco de vos...</p>
+          </label>
+          <textarea name="Cuentanos" id="textarea" cols="55" rows="10"></textarea>
           <label>
             <p>Sexo:*</p>
             <input type="radio" name="Sexo" id="Femenino">Femenino
             <input type="radio" name="Sexo" id="Masculino">Masculino
             <input type="radio" name="Sexo" id="Otro">Otro
           </label>
-        </fieldset>
-        <fieldset>
-          <legend>Datos de contacto</legend>
-          <label>
-            <p>Telefono:*</p>
-            <input type="text" name="Apellido" id="Apellido-lbl">
-          </label>
-          <label>
-            <p>Dirección de correo elecrónico:*</p>
-            <input type="text" name="Apellido" id="Apellido-lbl">
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>Actividad</legend>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend>Datos de contacto</legend>
+        <label>
+          <p>Telefono:*</p>
+          <input type="number" name="Apellido" id="Apellido-lbl" class="width-telefono" placeholder="Codigo de área y número" required>
+        </label>
+        <label>
+          <p>Dirección de correo elecrónico:*</p>
+          <input type="email" name="Apellido" id="Apellido-lbl" class="width" placeholder="Ej: mail@gmail.com" required>
+        </label>
+      </fieldset>
+      <hr>
+      <fieldset>
+        <legend>Actividad</legend>
+        <div class="left">
+        <label for="Palermo-lbl">
           <p>Por favor, indicar cuales actividades te interesan.</p>
-          <label for="Palermo-lbl">
-            <p>Sede Palermo:</p>
-          </label>
-          <input type="checkbox" name="basquet" id="Palermo-lbl">Básquet
-          <input type="checkbox" name="boxeo" id="Palermo-lbl">Boxeo
-          <input type="checkbox" name="Futbol" id="Palermo-lbl">Fútbol
-          <input type="checkbox" name="Tenis" id="Palermo-lbl">Tenis
-          <label for="Rosario-lbl">
-            <p>Sede Rosario:</p>
-          </label>
-          <input type="checkbox" name="basquet" id="Rosario-lbl">Básquet
-          <input type="checkbox" name="Futbol" id="Rosario-lbl">Fútbol
-          <input type="checkbox" name="Rugby" id="Rosario-lbl">Rugby
-          <input type="checkbox" name="Voley" id="Rosario-lbl">Voley
-        </fieldset>
-        <input type="checkbox" name="Condiciones" id="Condiciones">Acepto las condiciones
-        <input type="checkbox" name="Novedades" id="Novedades"> Deseo recibir novedades
+          <p>Sede Palermo:</p>
+        </label>
+        <input type="checkbox" name="basquet" id="Palermo-lbl">Básquet
+        <input type="checkbox" name="boxeo" id="Palermo-lbl">Boxeo
+        <input type="checkbox" name="Futbol" id="Palermo-lbl">Fútbol
+        <input type="checkbox" name="Tenis" id="Palermo-lbl">Tenis
+        <label for="Rosario-lbl">
+          <p>Sede Rosario:</p>
+        </label>
+        <input type="checkbox" name="basquet" id="Rosario-lbl">Básquet
+        <input type="checkbox" name="Futbol" id="Rosario-lbl">Fútbol
+        <input type="checkbox" name="Rugby" id="Rosario-lbl">Rugby
+        <input type="checkbox" name="Voley" id="Rosario-lbl">Voley
+      </div>
+      </fieldset>
+      <div class="condiciones">
+        <input type="checkbox" name="Condiciones" id="Condiciones-lbl" required>
+        <label for="Condiciones-lbl">
+          Acepto las condiciones
+        </label>
+        <br>
+      <input type="checkbox" name="Novedades" id="Novedades-lbl">
+      <label for="Novedades-lbl">
+        Deseo recibir novedades
+      </label>
+    <p id="campo">*:campo obligatorio.</p>
+  </div>
 
-        </form>
-      </section>
-    </main>
+<button>Iniciar Afiliación</button>
+<button>Restablecer</button>
+      </form>
+    </section>
+  </main>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
