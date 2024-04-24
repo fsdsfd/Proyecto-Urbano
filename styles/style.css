@@ -74,7 +74,7 @@ fieldset:focus-within{
   width: 400px;
 }
 input:focus{
-  background-color: #4D6D63;
+  background-color: #5ca890;
   color: #7E9996;
 }
 textarea:focus{
@@ -92,7 +92,7 @@ hr{
   text-align: left;
 }
 .condiciones{
-  color: white;
+  color: black;
   text-align: start;
   margin: 15px;
   font-size: 15px;
@@ -100,7 +100,7 @@ hr{
 }
 button{
   background-color: #00e99b;
-  color: #889B9A;
+  color: #000000;
   margin: 5px;
   width: 110px;
   height: 50px;
@@ -108,7 +108,7 @@ button{
   border:2px #404547 solid;
 }
 button:hover{
-  background-color: #9EB3AF;
+  background-color: #00ffaa;
   color: #4C5D5A;
 }
 #campo{
