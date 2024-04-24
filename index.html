@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afiliación</title>
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+      <section>
+        <fieldset>
+          <form>
+        <legend>datos personales</legend>
+          <label>
+            <p>Nombre:*</p>
+            <input type="text" name="Nombre" id="Nombre-lbl" class="width">
+          </label>
+          <label>
+            <p>Apellido:*</p>
+            <input type="text" name="Apellido" id="Apellido-lbl" class="width">
+          </label>
+          <label>
+            <p>Documento:*</p>
+            <input type="text" name="Documento" id="Documento-lbl" class="width">
+          </label>
+          <label>
+            <p>Nacionalidad:*</p>
+            <select name="Nacionalidad" id="Nacionalidad-lbl">
+              <option value="Selecciona">--Seleccionar--</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brasileña">Brasileña</option>
+              <option value="Uruguaya">Uruguaya</option>
+              <option value="Otra">Otra</option>
+            </select>
+          </label>
+          <label for="textarea">Cuentanos un poco de vos...</label>
+          <textarea name="Cuentanos" id="textarea" cols="30" rows="10"></textarea>
+          <label>
+            <p>Sexo:*</p>
+            <input type="radio" name="Sexo" id="Femenino">Femenino
+            <input type="radio" name="Sexo" id="Masculino">Masculino
+            <input type="radio" name="Sexo" id="Otro">Otro
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Datos de contacto</legend>
+          <label>
+            <p>Telefono:*</p>
+            <input type="text" name="Apellido" id="Apellido-lbl">
+          </label>
+          <label>
+            <p>Dirección de correo elecrónico:*</p>
+            <input type="text" name="Apellido" id="Apellido-lbl">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Actividad</legend>
+          <p>Por favor, indicar cuales actividades te interesan.</p>
+          <label for="Palermo-lbl">
+            <p>Sede Palermo:</p>
+          </label>
+          <input type="checkbox" name="basquet" id="Palermo-lbl">Básquet
+          <input type="checkbox" name="boxeo" id="Palermo-lbl">Boxeo
+          <input type="checkbox" name="Futbol" id="Palermo-lbl">Fútbol
+          <input type="checkbox" name="Tenis" id="Palermo-lbl">Tenis
+          <label for="Rosario-lbl">
+            <p>Sede Rosario:</p>
+          </label>
+          <input type="checkbox" name="basquet" id="Rosario-lbl">Básquet
+          <input type="checkbox" name="Futbol" id="Rosario-lbl">Fútbol
+          <input type="checkbox" name="Rugby" id="Rosario-lbl">Rugby
+          <input type="checkbox" name="Voley" id="Rosario-lbl">Voley
+        </fieldset>
+        <input type="checkbox" name="Condiciones" id="Condiciones">Acepto las condiciones
+        <input type="checkbox" name="Novedades" id="Novedades"> Deseo recibir novedades
+
+        </form>
+      </section>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
